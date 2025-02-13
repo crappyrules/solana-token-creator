@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  token-creator:
+    container_name: token-creator
+    build: .
+    volumes:
+      - ./scripts:/app/scripts
+    environment:
+      - WALLET_PRIVATE_KEY=${WALLET_PRIVATE_KEY}
+      - TOKEN_NAME=${TOKEN_NAME}
+      - TOKEN_SYMBOL=${TOKEN_SYMBOL}
+      - TOKEN_DESCRIPTION=${TOKEN_DESCRIPTION}
+      - TOKEN_DECIMALS=${TOKEN_DECIMALS}
+      - TOKEN_SUPPLY=${TOKEN_SUPPLY}
+      - TOKEN_URI=${TOKEN_URI}
+      - HELIUS_API_KEY=${HELIUS_API_KEY}
+    command: sh -c "npx ts-node scripts/create-token.ts" 

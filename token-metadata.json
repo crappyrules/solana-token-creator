@@ -1,0 +1,24 @@
+{
+    "name": "Your Token Name",
+    "symbol": "TKN",
+    "description": "Your token description",
+    "image": "https://arweave.net/YOUR_IMAGE_TX_ID",
+    "external_url": "https://your-website.com",
+    "attributes": [
+        {
+            "trait_type": "Category",
+            "value": "Token Category"  // e.g., "GameFi", "DeFi", "Utility"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "https://arweave.net/YOUR_IMAGE_TX_ID",  // Same as image field above
+                "type": "image/png",  // Update if using different format
+                "cdn": false
+            }
+        ],
+        "category": "image",
+        "creators": []  // Can be left empty for most tokens 
+    }
+}

@@ -1,0 +1,7 @@
+solana-token-project/
+├── docker-compose.yml
+├── Dockerfile
+├── scripts/
+│   ├── create-token.ts
+│   └── setup.sh
+└── .env 
