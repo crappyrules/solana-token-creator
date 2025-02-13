@@ -1,7 +1,8 @@
 {
-  "name": "crimekings-token",
+  "name": "solana-token-creator",
   "version": "1.0.0",
-  "description": "CrimeKings Token Creation",
+  "description": "Create SPL tokens on Solana with metadata and image support",
+  "license": "MIT",
   "main": "scripts/create-token.ts",
   "dependencies": {
     "@metaplex-foundation/mpl-token-metadata": "2.5.2",
